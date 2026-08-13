@@ -2,8 +2,10 @@ name: Famous heti menü frissítése
 
 on:
   schedule:
-    - cron: '0 8 * * *'
-    - cron: '0 9-17 * * 1'
+    # a Famous mindig hétfőn posztolja a heti menüt, de az időpont ingadozik (megfigyelve: 7-11
+    # óra magyar idő között) — hétfőn óránként nézünk rá; ha addig nem jönne ki, kedden és
+    # szerdán is (tartalékként), utána viszont leállunk a következő hétig
+    - cron: '0 5-14 * * 1-3'
   workflow_dispatch: {}
 
 permissions:

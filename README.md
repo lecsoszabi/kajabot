@@ -160,7 +160,7 @@ npm run deploy
 
 ### 7. GitHub Actions bekapcsolása
 
-A `.github/workflows/famous-scrape.yml` már benne van a repóban — amint pusholod a GitHubra, automatikusan elindul az ütemezés szerint (napi + hétfőnként óránkénti ellenőrzés). Nincs hozzá extra secret, a beépített `GITHUB_TOKEN`-t használja a commitoláshoz. Manuálisan is elindíthatod a GitHub repo "Actions" fülén, "Run workflow" gombbal, ha azonnal ki akarod próbálni.
+A `.github/workflows/famous-scrape.yml` már benne van a repóban — amint pusholod a GitHubra, automatikusan elindul az ütemezés szerint. A Famous mindig hétfőn posztolja a heti menüt (de az időpont ingadozik, 7-11 óra magyar idő körül), ezért a workflow **hétfőn óránként** (5-14 UTC) néz rá; ha addig nem jönne ki, **kedden és szerdán is** (tartalékként), utána viszont leáll a következő hétig. Ha már megvan az adat, egy másodperc alatt kilép, nem terheli feleslegesen a Facebookot. Nincs hozzá extra secret, a beépített `GITHUB_TOKEN`-t használja a commitoláshoz. Manuálisan is elindíthatod a GitHub repo "Actions" fülén, "Run workflow" gombbal, ha azonnal ki akarod próbálni.
 
 ## Más hosting opciók
 
