@@ -1,0 +1,32 @@
+name: Famous heti menü frissítése
+
+on:
+  schedule:
+    - cron: '0 8 * * *'
+    - cron: '0 9-17 * * 1'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - run: node scripts/scrape-famous.mjs
+
+      - name: Commit, ha változott az adat
+        run: |
+          git config user.name "kajabot-ci"
+          git config user.email "actions@github.com"
+          git add data/famous-week.json
+          git diff --cached --quiet || git commit -m "Famous heti menü frissítve"
+          git push

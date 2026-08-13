@@ -1,0 +1,19 @@
+{
+  "name": "kajabot",
+  "version": "1.0.0",
+  "description": "Discord bot a szegedi napi menük lekérdezéséhez (menum.hu API alapján)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "puppeteer": "^25.6.0"
+  }
+}
