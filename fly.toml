@@ -1,0 +1,16 @@
+# fly.toml — kajabot: folyamatosan futó Discord bot (nincs HTTP-szerver, ezért nincs
+# [http_service] blokk és nincs auto-stop — annak bekapcsolása leállítaná a botot,
+# mivel sosem kap bejövő HTTP-kérést, ami "felébresztené".
+
+app = 'kajabot'
+primary_region = 'fra'
+
+[build]
+
+[[vm]]
+  memory_mb = 256
+  cpu_kind = 'shared'
+  cpus = 1
+
+[processes]
+  app = 'node src/index.js'
