@@ -1,97 +1,87 @@
 {
-  "weekMonday": "2026-08-10",
+  "weekMonday": "2026-08-17",
   "days": {
-    "2026-08-10": {
+    "2026-08-17": {
       "items": [
         {
-          "name": "Mediterrán zöldségleves és vajhal tarte",
-          "price": "890 Ft",
+          "name": "Erdélyi káposztaleves sztrapacskával és sült hagymával",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Tépett marhával töltött lángos és muzsdéj",
-          "price": "1890 Ft",
+          "name": "Érlelt, tépett malac batáta vekniben fokhagymás majonézzel és szalmakrumplival",
+          "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Puncs szelet",
-          "price": "1290 Ft",
+          "name": "Sajttorta tonkababos",
+          "price": null,
           "category": "dessert"
         }
       ]
     },
-    "2026-08-11": {
+    "2026-08-18": {
       "items": [
         {
-          "name": "Répás spárga krémleves omlós pogácsával",
-          "price": "890 Ft",
+          "name": "Kacsaleves rizstésztával, zellerrel és répával",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sonkával, sajttal töltött karaj basmati rizzsel és grillezett kukoricával",
-          "price": "1890 Ft",
+          "name": "+21 napig érlelt tarja pecsenye fekete morzsával, cukorborsóval, burgonya koronggal és rizling mártással",
+          "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Puncs szelet",
-          "price": "1290 Ft",
+          "name": "Sajttorta tonkababos",
+          "price": null,
           "category": "dessert"
         }
       ]
     },
-    "2026-08-12": {
+    "2026-08-19": {
       "items": [
         {
-          "name": "Túrós barack leves bazsalikomos eper parféval",
-          "price": "890 Ft",
+          "name": "Szilvaleves házi gőzgombóccal és mákkal",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Érlelt malac wellington módra, sütőtök pürével és mandulás brokkolival",
-          "price": "1890 Ft",
+          "name": "Cornflakes bundában sült csirke basmati rizzsel és joghurtos mártogatóssal",
+          "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Puncs szelet",
-          "price": "1290 Ft",
+          "name": "Sajttorta tonkababos",
+          "price": null,
           "category": "dessert"
         }
       ]
     },
-    "2026-08-13": {
+    "2026-08-20": {
       "items": [
         {
-          "name": "Mustáros sertésragu leves trüffel burgonyagombóccal",
-          "price": "890 Ft",
+          "name": "-MENÜSZÜNET-",
+          "price": null,
           "category": "soup"
         },
         {
-          "name": "Grillezett csirke pisztácia rizottóval és gombával",
-          "price": "1890 Ft",
-          "category": "main"
-        },
-        {
-          "name": "Puncs szelet",
-          "price": "1290 Ft",
+          "name": "Sajttorta tonkababos",
+          "price": null,
           "category": "dessert"
         }
       ]
     },
-    "2026-08-14": {
+    "2026-08-21": {
       "items": [
         {
-          "name": "Szederleves vanília fagyival",
-          "price": "890 Ft",
+          "name": "-MENÜSZÜNET-",
+          "price": null,
           "category": "soup"
         },
         {
-          "name": "Sáfrányos rakott tészta pulykával és sajttal",
-          "price": "1890 Ft",
-          "category": "main"
-        },
-        {
-          "name": "Puncs szelet",
-          "price": "1290 Ft",
+          "name": "Sajttorta tonkababos",
+          "price": null,
           "category": "dessert"
         }
       ]
