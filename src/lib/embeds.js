@@ -55,7 +55,7 @@ function buildCategoryFields(group) {
   }));
 }
 
-const SERVICE_CHARGE_RATE = 0.1;
+const SERVICE_CHARGE_RATE = 0.12;
 
 function parsePriceNumber(item) {
   const match = item?.price?.match(/(\d[\d\s]*)/);
@@ -108,9 +108,9 @@ export function buildMenuEmbed(menu, { index, total, dateLabel }) {
 
     const priceTotal = computeMenuTotal(menu.items);
     if (priceTotal) {
-      let value = `Leves + főétel: **${priceTotal.withoutDessert} Ft** _(+10% szervizdíjjal: **${priceTotal.withoutDessertPlusService} Ft**)_`;
+      let value = `Leves + főétel: **${priceTotal.withoutDessert} Ft** _(+12% szervizdíjjal: **${priceTotal.withoutDessertPlusService} Ft**)_`;
       if (priceTotal.withDessert != null) {
-        value += `\nLeves + főétel + desszert: **${priceTotal.withDessert} Ft** _(+10% szervizdíjjal: **${priceTotal.withDessertPlusService} Ft**)_`;
+        value += `\nLeves + főétel + desszert: **${priceTotal.withDessert} Ft** _(+12% szervizdíjjal: **${priceTotal.withDessertPlusService} Ft**)_`;
       }
       embed.addFields({ name: '💰 Összesen', value });
     }

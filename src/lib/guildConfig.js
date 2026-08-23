@@ -29,6 +29,14 @@ export function setGuildConfig(guildId, partial) {
   return all[guildId];
 }
 
+export function deleteGuildConfig(guildId) {
+  const all = loadAll();
+  if (all[guildId]) {
+    delete all[guildId];
+    saveAll(all);
+  }
+}
+
 export function isSetupComplete(guildId) {
   const cfg = getGuildConfig(guildId);
   return Boolean(cfg?.channelId && cfg?.featuredRestaurants?.length);

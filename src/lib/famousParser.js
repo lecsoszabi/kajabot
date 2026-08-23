@@ -52,11 +52,17 @@ export function parseWeeklyMenuText(text, referenceDate = new Date()) {
   const dayEntries = [];
   let current = null;
   let buffer = '';
-  let dessertLine = null;
+  let inDessert = false; // a "DESSZERT MINDEN NAP:" fejléc után gyűjtött (több sorba is tördelt) szöveg
+  let dessertBuffer = '';
 
   const flushBuffer = () => {
-    if (buffer.trim() && current) {
-      current.items.push(parseItemLine(buffer.trim()));
+    const text = buffer.trim();
+    if (text) {
+      if (inDessert) {
+        dessertBuffer = dessertBuffer ? `${dessertBuffer} ${text}` : text;
+      } else if (current) {
+        current.items.push(parseItemLine(text));
+      }
     }
     buffer = '';
   };
@@ -65,6 +71,7 @@ export function parseWeeklyMenuText(text, referenceDate = new Date()) {
     const dayMatch = line.match(DAY_HEADER_RE);
     if (dayMatch) {
       flushBuffer();
+      inDessert = false;
       current = {
         weekdayIndex: WEEKDAY_MAP[normalize(dayMatch[1])],
         month: Number(dayMatch[2]),
@@ -78,17 +85,30 @@ export function parseWeeklyMenuText(text, referenceDate = new Date()) {
     const dessertMatch = line.match(DESSERT_RE);
     if (dessertMatch) {
       flushBuffer();
-      dessertLine = dessertMatch[1] || line;
+      inDessert = true;
       current = null;
+      // a fejléc sorában a kettőspont után álló szöveg (ha van) már a desszert része
+      if (dessertMatch[1]?.trim()) buffer = dessertMatch[1].trim();
+      // amint az ár megvan, lezárjuk a desszertet — így a poszt utáni Facebook-szemét
+      // ("Az összes reakció...", "megosztás" stb.) nem ragad hozzá
+      if (PRICE_TAIL_RE.test(line)) {
+        flushBuffer();
+        inDessert = false;
+      }
       continue;
     }
 
-    if (!current) continue; // promó szöveg az első nap előtt - kihagyjuk
+    if (!current && !inDessert) continue; // promó szöveg az első nap előtt / desszert után - kihagyjuk
 
     buffer = buffer ? `${buffer} ${line}` : line;
-    if (PRICE_TAIL_RE.test(line)) flushBuffer();
+    if (PRICE_TAIL_RE.test(line)) {
+      flushBuffer();
+      if (inDessert) inDessert = false; // a desszert egyetlen, árral záruló tétel — utána leállunk
+    }
   }
   flushBuffer();
+
+  const dessertLine = dessertBuffer.trim() || null;
 
   if (!dayEntries.length) {
     throw new Error(

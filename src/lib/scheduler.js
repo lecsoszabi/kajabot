@@ -2,12 +2,21 @@ import { budapestNow } from './menumApi.js';
 import { combinedMenusWithItems } from './famousStore.js';
 import { buildMenuEmbed, buildInfoEmbed, buildPollEmbed } from './embeds.js';
 import { buildPollSelectRow } from './components.js';
-import { getAllConfiguredGuilds } from './guildConfig.js';
+import { getAllConfiguredGuilds, deleteGuildConfig } from './guildConfig.js';
 import { getPoll, savePoll } from './pollStore.js';
 
 const CHECK_INTERVAL_MS = 30 * 1000;
 const POST_HOUR = '10';
 const POST_MINUTE = '00';
+
+// Discord hibakódok, amik azt jelzik, hogy a bot tartósan nem fér hozzá a beállított
+// szerverhez/csatornához (kirakták, törölték a csatornát, elvették a jogot) — ilyenkor a stale
+// configot töröljük, hogy ne dobjon minden nap hibát feleslegesen. Új /setup bármikor visszaállítja.
+const STALE_CONFIG_CODES = new Set([
+  10003, // Unknown Channel
+  10004, // Unknown Guild
+  50001, // Missing Access
+]);
 
 const GYROS_ALERT_RE = /gyros|kebab/i;
 const POOP_BORDER = '💩'.repeat(14);
@@ -96,7 +105,14 @@ export function startDailyMenuPoster(client) {
 
         await refreshPoll(channel, guildCfg.guildId, dateStr);
       } catch (err) {
-        console.error(`Hiba a napi menü poszt küldésekor (guild ${guildCfg.guildId}):`, err);
+        if (STALE_CONFIG_CODES.has(err?.code)) {
+          deleteGuildConfig(guildCfg.guildId);
+          console.warn(
+            `Guild ${guildCfg.guildId} beállítása törölve — a bot nem fér hozzá a csatornához (${err.code}). Új /setup állítja vissza.`,
+          );
+        } else {
+          console.error(`Hiba a napi menü poszt küldésekor (guild ${guildCfg.guildId}):`, err);
+        }
       }
     }
   }, CHECK_INTERVAL_MS);
