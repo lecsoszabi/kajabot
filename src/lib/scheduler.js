@@ -9,6 +9,12 @@ const CHECK_INTERVAL_MS = 30 * 1000;
 const POST_HOUR = '10';
 const POST_MINUTE = '00';
 
+// Hétvégén (szombat-vasárnap) sehol nincs napi menü, ezért nem posztolunk és szavazást se nyitunk.
+function isWeekend(dateStr) {
+  const day = new Date(`${dateStr}T00:00:00Z`).getUTCDay();
+  return day === 0 || day === 6;
+}
+
 // Discord hibakódok, amik azt jelzik, hogy a bot tartósan nem fér hozzá a beállított
 // szerverhez/csatornához (kirakták, törölték a csatornát, elvették a jogot) — ilyenkor a stale
 // configot töröljük, hogy ne dobjon minden nap hibát feleslegesen. Új /setup bármikor visszaállítja.
@@ -87,6 +93,7 @@ export function startDailyMenuPoster(client) {
   setInterval(async () => {
     const { dateStr, hour, minute } = budapestNow();
     if (hour !== POST_HOUR || minute !== POST_MINUTE) return;
+    if (isWeekend(dateStr)) return;
 
     const guilds = getAllConfiguredGuilds();
     for (const guildCfg of guilds) {
