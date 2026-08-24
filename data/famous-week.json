@@ -1,86 +1,96 @@
 {
-  "weekMonday": "2026-08-17",
+  "weekMonday": "2026-08-24",
   "days": {
-    "2026-08-17": {
+    "2026-08-24": {
       "items": [
         {
-          "name": "Erdélyi káposztaleves sztrapacskával és sült hagymával",
+          "name": "Alföldi babgulyás",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Érlelt, tépett malac batáta vekniben fokhagymás majonézzel és szalmakrumplival",
+          "name": "Mandula bundában sült malac pecsenye marinált uborkával és illatos rizzsel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sajttorta tonkababos vanília sodóval",
+          "name": "Nagyi szilvás morzsasütije levendula-mák mártással",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-18": {
+    "2026-08-25": {
       "items": [
         {
-          "name": "Kacsaleves rizstésztával, zellerrel és répával",
+          "name": "Brokkoli krémleves brokkoli-kenyérrel",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "+21 napig érlelt tarja pecsenye fekete morzsával, cukorborsóval, burgonya koronggal és rizling mártással",
+          "name": "Fokhagymás roston csirke pestoval, burgonyarózsával és arancinivel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sajttorta tonkababos vanília sodóval",
+          "name": "Nagyi szilvás morzsasütije levendula-mák mártással",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-19": {
+    "2026-08-26": {
       "items": [
         {
-          "name": "Szilvaleves házi gőzgombóccal és mákkal",
+          "name": "Marhaleves petrezselymes metélttel",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Cornflakes bundában sült csirke basmati rizzsel és joghurtos mártogatóssal",
+          "name": "Póréhagymás-lazac galette, kertészsaláta, balzsam ecetkrém, húsos rétes",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sajttorta tonkababos vanília sodóval",
+          "name": "Nagyi szilvás morzsasütije levendula-mák mártással",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-20": {
+    "2026-08-27": {
       "items": [
         {
-          "name": "-MENÜSZÜNET-",
-          "price": null,
+          "name": "Kókusztejes curry csirkeragu leves sáfrány gombóccal",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sajttorta tonkababos vanília sodóval",
+          "name": "Bécsi szelet pánkómorzsában, petrezselymes burgonya, remouláde",
+          "price": "1990 Ft",
+          "category": "main"
+        },
+        {
+          "name": "Nagyi szilvás morzsasütije levendula-mák mártással",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-21": {
+    "2026-08-28": {
       "items": [
         {
-          "name": "-MENÜSZÜNET-",
-          "price": null,
+          "name": "Gyümölcsleves házi fagyival",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sajttorta tonkababos vanília sodóval",
+          "name": "Lasagne pimiento mártással és salátával",
+          "price": "1990 Ft",
+          "category": "main"
+        },
+        {
+          "name": "Nagyi szilvás morzsasütije levendula-mák mártással",
           "price": "1390 Ft",
           "category": "dessert"
         }
