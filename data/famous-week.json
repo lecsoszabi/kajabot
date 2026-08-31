@@ -1,87 +1,97 @@
 {
-  "weekMonday": "2026-08-17",
+  "weekMonday": "2026-08-31",
   "days": {
-    "2026-08-17": {
+    "2026-08-31": {
       "items": [
         {
-          "name": "Erdélyi káposztaleves sztrapacskával és sült hagymával",
+          "name": "Székelygulyás",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Érlelt, tépett malac batáta vekniben fokhagymás majonézzel és szalmakrumplival",
+          "name": "Parmezán bundás karaj krokettel és cukorborsóval",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sajttorta tonkababos",
-          "price": null,
+          "name": "Vörös bársony torta",
+          "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-18": {
+    "2026-09-01": {
       "items": [
         {
-          "name": "Kacsaleves rizstésztával, zellerrel és répával",
+          "name": "Avokádó-zöldség krémleves makréla pitével",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "+21 napig érlelt tarja pecsenye fekete morzsával, cukorborsóval, burgonya koronggal és rizling mártással",
+          "name": "Diós pestos csirke carbonaraval",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sajttorta tonkababos",
-          "price": null,
+          "name": "Vörös bársony torta",
+          "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-19": {
+    "2026-09-02": {
       "items": [
         {
-          "name": "Szilvaleves házi gőzgombóccal és mákkal",
+          "name": "Erőleves rizslapba tekert húsos batyuval",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Cornflakes bundában sült csirke basmati rizzsel és joghurtos mártogatóssal",
+          "name": "Kenyérlángos aszalt paradicsommal, sonkával, goudával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sajttorta tonkababos",
-          "price": null,
+          "name": "Vörös bársony torta",
+          "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-20": {
+    "2026-09-03": {
       "items": [
         {
-          "name": "-MENÜSZÜNET-",
-          "price": null,
+          "name": "Póréhagyma leves omlós morzsával",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sajttorta tonkababos",
-          "price": null,
+          "name": "Chilis bab sült fokhagymás kenyérrel, öreg tésztából",
+          "price": "1990 Ft",
+          "category": "main"
+        },
+        {
+          "name": "Vörös bársony torta",
+          "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-08-21": {
+    "2026-09-04": {
       "items": [
         {
-          "name": "-MENÜSZÜNET-",
-          "price": null,
+          "name": "Fahéjas almaleves Rákóczi túróssal",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sajttorta tonkababos",
-          "price": null,
+          "name": "Rakott marhás bulgur káposztával, tejföllel",
+          "price": "1990 Ft",
+          "category": "main"
+        },
+        {
+          "name": "Vörös bársony torta",
+          "price": "1390 Ft",
           "category": "dessert"
         }
       ]

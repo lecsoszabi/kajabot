@@ -4,3 +4,4 @@ node_modules
 .idea
 data/guild-config.json
 data/polls.json
+data/daily-posts.json
