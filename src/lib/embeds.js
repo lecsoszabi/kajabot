@@ -1,6 +1,6 @@
 import { EmbedBuilder } from 'discord.js';
 import { restaurantLogoUrl } from './menumApi.js';
-import { POLL_TIME_SLOTS, POLL_NOT_GOING } from './pollStore.js';
+import { POLL_NOT_GOING, POLL_PLACES, MIN_VOTES_FOR_WINNER } from './pollStore.js';
 
 const CATEGORY_ORDER = ['soup', 'main', 'dessert', 'other'];
 const CATEGORY_LABELS = {
@@ -86,6 +86,33 @@ function computeMenuTotal(items) {
   };
 }
 
+const ITEM_EMOJI = { soup: '🥣', main: '🍖', dessert: '🍰', other: '🍴' };
+const RESTAURANT_EMOJI = { 'famous-steakbisztro': '🥩' };
+
+// Kompakt oszlop egy étteremhez a napi táblázatos poszthoz (menü + összár).
+function digestColumn(menu) {
+  const lines = menu.items.map((item) => {
+    const price = item.menuPrice || item.price;
+    return `${ITEM_EMOJI[item.category] || '🍴'} ${item.name}${price ? ` — ${price}` : ''}`;
+  });
+  const total = computeMenuTotal(menu.items);
+  if (total) {
+    lines.push(`\n💰 **${total.withoutDessert} Ft** _(+12%: ${total.withoutDessertPlusService})_`);
+    if (total.withDessert != null) lines.push(`+ desszert: **${total.withDessert} Ft** _(+12%: ${total.withDessertPlusService})_`);
+  }
+  const emoji = RESTAURANT_EMOJI[menu.restaurant.id] || '🍽️';
+  return { name: `${emoji} ${menu.restaurant.name}`, value: lines.join('\n').slice(0, 1024), inline: true };
+}
+
+// A napi menü egyetlen embedben, az éttermek egymás mellett táblázatos oszlopokban, plusz a Pipi.
+export function buildCombinedDigestEmbed(selected, dateStr) {
+  const embed = new EmbedBuilder().setColor(0xe67e22).setTitle(`🍲 Mai menü — ${dateStr}`);
+  for (const menu of selected) embed.addFields(digestColumn(menu));
+  embed.addFields({ name: '🍗 Pipi Szeged', value: 'Gyros & streetfood\nSzavazz rá lent! 🗳️', inline: true });
+  embed.setFooter({ text: 'Szeged • napi menü' });
+  return embed;
+}
+
 export function buildMenuEmbed(menu, { index, total, dateLabel }) {
   const embed = new EmbedBuilder()
     .setColor(0xe67e22)
@@ -119,24 +146,53 @@ export function buildMenuEmbed(menu, { index, total, dateLabel }) {
   return embed;
 }
 
+function mostCommon(values) {
+  const counts = {};
+  let best = null;
+  for (const v of values) {
+    counts[v] = (counts[v] || 0) + 1;
+    if (!best || counts[v] > counts[best]) best = v;
+  }
+  return best;
+}
+
+function pollVoterLabel(v) {
+  return v.time ? `${v.username} (${v.time})` : v.username;
+}
+
 export function buildPollEmbed(dateStr, votes = {}) {
   const embed = new EmbedBuilder()
     .setColor(0x2ecc71)
-    .setTitle('🍽️ Ki megy ma a Famousba?')
+    .setTitle('🍽️ Ki jön kajálni?')
     .setFooter({ text: `Szavazás — ${dateStr}` });
 
   const entries = Object.values(votes);
   const lines = [];
-  for (const time of POLL_TIME_SLOTS) {
-    const names = entries.filter((v) => v.answer === time).map((v) => v.username);
-    if (names.length) lines.push(`🕐 **${time}** — ${names.join(', ')}`);
+  for (const place of POLL_PLACES) {
+    const voters = entries.filter((v) => v.place === place.id);
+    if (voters.length) lines.push(`${place.emoji} **${place.name}** (${voters.length}) — ${voters.map(pollVoterLabel).join(', ')}`);
   }
-  const notGoing = entries.filter((v) => v.answer === POLL_NOT_GOING).map((v) => v.username);
+  const notGoing = entries.filter((v) => v.place === POLL_NOT_GOING).map((v) => v.username);
   if (notGoing.length) lines.push(`❌ **Nem megyek** — ${notGoing.join(', ')}`);
 
-  const votesText = lines.length ? lines.join('\n') : '_Még senki nem szavazott — válassz lent!_';
+  const votesText = lines.length ? lines.join('\n') : '_Még senki nem szavazott — válassz lent hova és mikor!_';
+
+  let winnerText = '';
+  if (entries.length >= MIN_VOTES_FOR_WINNER) {
+    const counts = POLL_PLACES.map((p) => ({ place: p, n: entries.filter((v) => v.place === p.id).length }));
+    const max = Math.max(...counts.map((c) => c.n));
+    const top = counts.filter((c) => c.n === max && c.n > 0);
+    if (top.length === 1) {
+      const win = top[0];
+      const time = mostCommon(entries.filter((v) => v.place === win.place.id && v.time).map((v) => v.time));
+      winnerText = `\n\n🏆 **Nyerő: ${win.place.name}** (${win.n} szavazat)${time ? ` — legtöbben ${time}-kor` : ''}`;
+    } else if (top.length > 1) {
+      winnerText = `\n\n🤝 **Döntetlen:** ${top.map((c) => c.place.name).join(' / ')} (${max}-${max})`;
+    }
+  }
+
   embed.setDescription(
-    `Válaszd ki lent, mikor mész (a napi menü 12:00–14:00 között van), vagy hogy nem mész. A holnapi posztnál ez a szavazás törlődik.\n\n${votesText}`,
+    `Szavazz lent: **hova** jössz kajálni és **mikor** (a napi menü 12:00–14:00 között van). Legalább ${MIN_VOTES_FOR_WINNER} szavazatnál kihirdetjük a nyerőt. A holnapi posztnál a szavazás törlődik.\n\n${votesText}${winnerText}`,
   );
 
   return embed;

@@ -1,7 +1,7 @@
 import { budapestNow } from './menumApi.js';
 import { combinedMenusWithItems } from './famousStore.js';
-import { buildMenuEmbed, buildInfoEmbed, buildPollEmbed } from './embeds.js';
-import { buildPollSelectRow } from './components.js';
+import { buildCombinedDigestEmbed, buildInfoEmbed, buildPollEmbed } from './embeds.js';
+import { buildPollComponents } from './components.js';
 import { getAllConfiguredGuilds, deleteGuildConfig } from './guildConfig.js';
 import { getPoll, savePoll } from './pollStore.js';
 import { getDailyPost, saveDailyPost } from './dailyPostStore.js';
@@ -62,21 +62,17 @@ export async function buildDailyDigestPayload(dateStr, featuredIds) {
     };
   }
 
-  const embeds = selected.map((menu, i) =>
-    buildMenuEmbed(menu, { index: i, total: selected.length, dateLabel: 'Ma' }),
-  );
+  const embed = buildCombinedDigestEmbed(selected, dateStr);
 
   const alert = hasGyrosAlert(selected);
-  if (alert) {
-    for (const embed of embeds) embed.setColor(POOP_COLOR);
-  }
+  if (alert) embed.setColor(POOP_COLOR);
 
   const baseContent = `🍲 **Mai menü — ${dateStr}**`;
   const content = alert
     ? `${POOP_BORDER}\n🚨💩 FOSATÓS GYROS RIADÓ 💩🚨\n${baseContent}\n${POOP_BORDER}`
     : baseContent;
 
-  return { content, embeds };
+  return { content, embeds: [embed] };
 }
 
 // A napi menü tartalmához @everyone-t fűz (csak ha van tényleges menü-tartalom, hibaüzenetnél nem).
@@ -97,7 +93,7 @@ export async function refreshPoll(channel, guildId, dateStr) {
 
   const pollMessage = await channel.send({
     embeds: [buildPollEmbed(dateStr, {})],
-    components: [buildPollSelectRow()],
+    components: buildPollComponents(),
   });
 
   savePoll(guildId, { messageId: pollMessage.id, channelId: channel.id, date: dateStr, votes: {} });

@@ -7,6 +7,14 @@ const DATA_FILE = path.join(__dirname, '..', '..', 'data', 'polls.json');
 
 export const POLL_TIME_SLOTS = ['12:00', '12:30', '13:00', '13:30', '14:00'];
 export const POLL_NOT_GOING = 'not_going';
+export const MIN_VOTES_FOR_WINNER = 3;
+
+// A szavazható helyek (a napi menü Famous+Bistorant, plusz a Pipi mint gyros/streetfood opció).
+export const POLL_PLACES = [
+  { id: 'pipi', name: 'Pipi Szeged', emoji: '🍗' },
+  { id: 'famous', name: 'Famous', emoji: '🥩' },
+  { id: 'bistorant', name: 'Bistorant', emoji: '🍽️' },
+];
 
 function loadAll() {
   try {

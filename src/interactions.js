@@ -9,7 +9,7 @@ import { getMondayOfWeek, weekdayIndexOf, toDateString } from './lib/menumApi.js
 import { combinedMenusWithItems, combinedDirectory, saveFamousWeek } from './lib/famousStore.js';
 import { parseWeeklyMenuText } from './lib/famousParser.js';
 import { buildInfoEmbed, buildPollEmbed } from './lib/embeds.js';
-import { buildSetupRestaurantSelectRow, buildPollSelectRow } from './lib/components.js';
+import { buildSetupRestaurantSelectRow, buildPollComponents } from './lib/components.js';
 import { getGuildConfig, setGuildConfig } from './lib/guildConfig.js';
 import { getPoll, savePoll } from './lib/pollStore.js';
 
@@ -79,7 +79,7 @@ export async function handleSelectMenu(interaction) {
     return interaction.editReply(await buildWeekDayPayload(restaurantId, mondayStr, dayIndex));
   }
 
-  if (scope === 'poll' && action === 'vote') {
+  if (scope === 'poll' && (action === 'place' || action === 'time')) {
     const poll = getPoll(interaction.guildId);
     if (!poll || poll.messageId !== interaction.message.id) {
       await interaction.reply({
@@ -90,12 +90,13 @@ export async function handleSelectMenu(interaction) {
     }
 
     const username = interaction.member?.displayName || interaction.user.username;
-    poll.votes[interaction.user.id] = { username, answer: interaction.values[0] };
+    const prev = poll.votes[interaction.user.id] || { username, place: null, time: null };
+    poll.votes[interaction.user.id] = { ...prev, username, [action]: interaction.values[0] };
     savePoll(interaction.guildId, poll);
 
     await interaction.update({
       embeds: [buildPollEmbed(poll.date, poll.votes)],
-      components: [buildPollSelectRow()],
+      components: buildPollComponents(),
     });
     return;
   }

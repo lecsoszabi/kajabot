@@ -1,5 +1,5 @@
 import { ActionRowBuilder, ButtonBuilder, ButtonStyle, StringSelectMenuBuilder } from 'discord.js';
-import { POLL_TIME_SLOTS, POLL_NOT_GOING } from './pollStore.js';
+import { POLL_TIME_SLOTS, POLL_NOT_GOING, POLL_PLACES } from './pollStore.js';
 
 export function buildTodayNavRow(dateStr, index, total) {
   const prev = new ButtonBuilder()
@@ -89,18 +89,24 @@ export function buildSetupRestaurantSelectRow(restaurants, defaultIds = []) {
   return new ActionRowBuilder().addComponents(select);
 }
 
-export function buildPollSelectRow() {
-  const options = [
-    ...POLL_TIME_SLOTS.map((t) => ({ label: t, value: t, emoji: '🕐' })),
-    { label: 'Nem megyek', value: POLL_NOT_GOING, emoji: '❌' },
+export function buildPollComponents() {
+  const placeSelect = new StringSelectMenuBuilder()
+    .setCustomId('poll:place')
+    .setPlaceholder('Hova jössz kajálni?')
+    .addOptions([
+      ...POLL_PLACES.map((p) => ({ label: p.name, value: p.id, emoji: p.emoji })),
+      { label: 'Nem megyek', value: POLL_NOT_GOING, emoji: '❌' },
+    ]);
+
+  const timeSelect = new StringSelectMenuBuilder()
+    .setCustomId('poll:time')
+    .setPlaceholder('Mikor?')
+    .addOptions(POLL_TIME_SLOTS.map((t) => ({ label: t, value: t, emoji: '🕐' })));
+
+  return [
+    new ActionRowBuilder().addComponents(placeSelect),
+    new ActionRowBuilder().addComponents(timeSelect),
   ];
-
-  const select = new StringSelectMenuBuilder()
-    .setCustomId('poll:vote')
-    .setPlaceholder('Mikor mész? / Nem megyek')
-    .addOptions(options);
-
-  return new ActionRowBuilder().addComponents(select);
 }
 
 export function buildHomeRow() {
