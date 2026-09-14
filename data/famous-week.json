@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-08-31",
+  "weekMonday": "2026-09-14",
   "days": {
-    "2026-08-31": {
+    "2026-09-14": {
       "items": [
         {
-          "name": "Székelygulyás",
+          "name": "Medvehagyma krémleves és sonkás tejfölös focaccia",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Parmezán bundás karaj krokettel és cukorborsóval",
+          "name": "Forrázott fánk chilis babbal töltve, grillezett kukorica és krokett",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Vörös bársony torta",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-01": {
+    "2026-09-15": {
       "items": [
         {
-          "name": "Avokádó-zöldség krémleves makréla pitével",
+          "name": "Kacsaleves narancs-grízgaluskával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Diós pestos csirke carbonaraval",
+          "name": "Szarvasgombás fürj ragu quinoával és salátával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Vörös bársony torta",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-02": {
+    "2026-09-16": {
       "items": [
         {
-          "name": "Erőleves rizslapba tekert húsos batyuval",
+          "name": "Angus darált marhaleves bulgurral",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Kenyérlángos aszalt paradicsommal, sonkával, goudával",
+          "name": "Bacon bundás gouda kukoricás rizzsel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Vörös bársony torta",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-03": {
+    "2026-09-17": {
       "items": [
         {
-          "name": "Póréhagyma leves omlós morzsával",
+          "name": "Vaníliás meggyleves mályvacukorral",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Chilis bab sült fokhagymás kenyérrel, öreg tésztából",
+          "name": "Kukorica bundás hekk karfiol-burgonya pürével",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Vörös bársony torta",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-04": {
+    "2026-09-18": {
       "items": [
         {
-          "name": "Fahéjas almaleves Rákóczi túróssal",
+          "name": "Zellerkrémleves chipsszel",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Rakott marhás bulgur káposztával, tejföllel",
+          "name": "Spenótos rikottás pulyka lasagne",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Vörös bársony torta",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
