@@ -11,7 +11,41 @@ import { parseWeeklyMenuText } from './lib/famousParser.js';
 import { buildInfoEmbed, buildPollEmbed } from './lib/embeds.js';
 import { buildSetupRestaurantSelectRow, buildPollComponents } from './lib/components.js';
 import { getGuildConfig, setGuildConfig } from './lib/guildConfig.js';
-import { getPoll, savePoll } from './lib/pollStore.js';
+import { getPoll, savePoll, POLL_NOT_GOING } from './lib/pollStore.js';
+
+async function guildEmoji(interaction, name) {
+  let e = interaction.guild?.emojis.cache.find((x) => x.name === name);
+  if (!e) e = (await interaction.guild?.emojis.fetch().catch(() => null))?.find((x) => x.name === name);
+  return e ? e.toString() : `:${name}:`;
+}
+
+async function maybeVoteEasterEgg(interaction, place) {
+  const username = interaction.user.username;
+  const coming = Boolean(place) && place !== POLL_NOT_GOING;
+  const notGoing = place === POLL_NOT_GOING;
+
+  let text = null;
+  if (username === 'occse430' && coming) {
+    const laugh = `X${'D'.repeat(2 + Math.floor(Math.random() * 22))}`;
+    text = `Patrik el fogsz hízni ${await guildEmoji(interaction, 'pregnant_patrik')} ${laugh}`;
+  } else if (username === 'tomi_ohl' && coming) {
+    text = 'nem fogsz beférni a volvo-ba';
+  } else if (username === 'ricsi69' && coming && Math.floor(Math.random() * 23) === 0) {
+    text = 'A MAKKOM';
+  } else if (username === 'kolbasz9234' && notGoing) {
+    text = `megint fosol? ${'💩'.repeat(5)}`;
+  }
+  if (!text) return;
+
+  try {
+    await interaction.channel.send({
+      content: `<@${interaction.user.id}> ${text}`,
+      allowedMentions: { users: [interaction.user.id] },
+    });
+  } catch (err) {
+    console.error('Vote easter egg hiba:', err);
+  }
+}
 
 export async function handleButton(interaction) {
   const [scope, action, ...rest] = interaction.customId.split(':');
@@ -98,6 +132,8 @@ export async function handleSelectMenu(interaction) {
       embeds: [buildPollEmbed(poll.date, poll.votes)],
       components: buildPollComponents(),
     });
+
+    if (action === 'place') await maybeVoteEasterEgg(interaction, interaction.values[0]);
     return;
   }
 
