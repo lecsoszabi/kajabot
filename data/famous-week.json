@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-09-07",
+  "weekMonday": "2026-09-14",
   "days": {
-    "2026-09-07": {
+    "2026-09-14": {
       "items": [
         {
-          "name": "Toszkán paradicsomleves brokkoli krutonnal",
+          "name": "Medvehagyma krémleves és sonkás tejfölös focaccia",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Csirkemell steak parajos rizzsel és zellerchipsszel",
+          "name": "Forrázott fánk chilis babbal töltve, grillezett kukorica és krokett",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Epres macchiato pohárdesszert",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-08": {
+    "2026-09-15": {
       "items": [
         {
-          "name": "Korhelyleves tejfölös gombóccal",
+          "name": "Kacsaleves narancs-grízgaluskával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Karaj párizsi módra medvehagymás sajtos muffinnal és sütőtök krémmel",
+          "name": "Szarvasgombás fürj ragu quinoával és salátával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Epres macchiato pohárdesszert",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-09": {
+    "2026-09-16": {
       "items": [
         {
-          "name": "Sült fokhagyma krémleves cheddar-jalapenos kenyérrel",
+          "name": "Angus darált marhaleves bulgurral",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sertés érmék mogyoróvajas, sós zserbóval és aszalt füge mártással",
+          "name": "Bacon bundás gouda kukoricás rizzsel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Epres macchiato pohárdesszert",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-10": {
+    "2026-09-17": {
       "items": [
         {
-          "name": "Erdei gyümölcs smoothie sós karamellás granolával",
+          "name": "Vaníliás meggyleves mályvacukorral",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Cheddar bundás csirke gorgonzolás, diós fussilivel",
+          "name": "Kukorica bundás hekk karfiol-burgonya pürével",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Epres macchiato pohárdesszert",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-11": {
+    "2026-09-18": {
       "items": [
         {
-          "name": "Hokkaido sütőtök krémleves",
+          "name": "Zellerkrémleves chipsszel",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Tonkatsu burger szalmakrumplival",
+          "name": "Spenótos rikottás pulyka lasagne",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Epres macchiato pohárdesszert",
+          "name": "Sütőtökös muffin csokiszósszal",
           "price": "1390 Ft",
           "category": "dessert"
         }
