@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-09-14",
+  "weekMonday": "2026-09-21",
   "days": {
-    "2026-09-14": {
+    "2026-09-21": {
       "items": [
         {
-          "name": "Medvehagyma krémleves és sonkás tejfölös focaccia",
+          "name": "Krémleves a kert zöldségeiből, burgonya nudli, quinoa",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Forrázott fánk chilis babbal töltve, grillezett kukorica és krokett",
+          "name": "Fűszeres pergő rizs, sokmagvagvas bundás malac, koktél szósz",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sütőtökös muffin csokiszósszal",
+          "name": "Mogyoró nugát palacsinta",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-15": {
+    "2026-09-22": {
       "items": [
         {
-          "name": "Kacsaleves narancs-grízgaluskával",
+          "name": "Francia hagymaleves burgonya pogácsával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Szarvasgombás fürj ragu quinoával és salátával",
+          "name": "Enchilada saláta válogatással",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sütőtökös muffin csokiszósszal",
+          "name": "Mogyoró nugát palacsinta",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-16": {
+    "2026-09-23": {
       "items": [
         {
-          "name": "Angus darált marhaleves bulgurral",
+          "name": "Iberico sertéstarja leves medvehagyma gombóccal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Bacon bundás gouda kukoricás rizzsel",
+          "name": "Mézes-gyömbéres kemencés sütőtök, hagymás tört burgonya, pankómorzsában sült csirkemell",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sütőtökös muffin csokiszósszal",
+          "name": "Mogyoró nugát palacsinta",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-17": {
+    "2026-09-24": {
       "items": [
         {
-          "name": "Vaníliás meggyleves mályvacukorral",
+          "name": "Tonkababos mák leves chia maggal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Kukorica bundás hekk karfiol-burgonya pürével",
+          "name": "Penne Arrabiatta bazsalikomos jérce kockával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sütőtökös muffin csokiszósszal",
+          "name": "Mogyoró nugát palacsinta",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-18": {
+    "2026-09-25": {
       "items": [
         {
-          "name": "Zellerkrémleves chipsszel",
+          "name": "Libaleves, sütőtökös metélttel",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Spenótos rikottás pulyka lasagne",
+          "name": "Sloppy Joe burgonya crispers-szel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Sütőtökös muffin csokiszósszal",
+          "name": "Mogyoró nugát palacsinta",
           "price": "1390 Ft",
           "category": "dessert"
         }
