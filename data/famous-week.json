@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-09-21",
+  "weekMonday": "2026-09-28",
   "days": {
-    "2026-09-21": {
+    "2026-09-28": {
       "items": [
         {
-          "name": "Krémleves a kert zöldségeiből, burgonya nudli, quinoa",
+          "name": "Zellerkrémleves húsos batyuval",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Fűszeres pergő rizs, sokmagvagvas bundás malac, koktél szósz",
+          "name": "Kéksajtos lasagne vegyes salátával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Mogyoró nugát palacsinta",
+          "name": "Somlói, rum, csokoládé",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-22": {
+    "2026-09-29": {
       "items": [
         {
-          "name": "Francia hagymaleves burgonya pogácsával",
+          "name": "Marha erőleves csigatésztával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Enchilada saláta válogatással",
+          "name": "Füstölt sajttal töltött malac karamellizált körtével és burgonyapürével",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Mogyoró nugát palacsinta",
+          "name": "Somlói, rum, csokoládé",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-23": {
+    "2026-09-30": {
       "items": [
         {
-          "name": "Iberico sertéstarja leves medvehagyma gombóccal",
+          "name": "Babgulyás",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Mézes-gyömbéres kemencés sütőtök, hagymás tört burgonya, pankómorzsában sült csirkemell",
+          "name": "Jambalaya",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Mogyoró nugát palacsinta",
+          "name": "Somlói, rum, csokoládé",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-24": {
+    "2026-10-01": {
       "items": [
         {
-          "name": "Tonkababos mák leves chia maggal",
+          "name": "Zöldség krémleves sütőtök gomóccal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Penne Arrabiatta bazsalikomos jérce kockával",
+          "name": "Cheddar bundás csirke paradicsomos spagettivel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Mogyoró nugát palacsinta",
+          "name": "Somlói, rum, csokoládé",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-25": {
+    "2026-10-02": {
       "items": [
         {
-          "name": "Libaleves, sütőtökös metélttel",
+          "name": "Feketeerdő meggyleves meggypálinka habbal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Sloppy Joe burgonya crispers-szel",
+          "name": "Paraszt vekni grillkolbásszal steakburgonyával és ajvárral",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Mogyoró nugát palacsinta",
+          "name": "Somlói, rum, csokoládé",
           "price": "1390 Ft",
           "category": "dessert"
         }
