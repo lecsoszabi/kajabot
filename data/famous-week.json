@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-09-28",
+  "weekMonday": "2026-10-05",
   "days": {
-    "2026-09-28": {
+    "2026-10-05": {
       "items": [
         {
-          "name": "Zellerkrémleves húsos batyuval",
+          "name": "Fokhagyma krémleves",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Kéksajtos lasagne vegyes salátával",
+          "name": "Baconbe gyöngyölt zsályás karaj szeletek sonkás kukoricás rizzsel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Somlói, rum, csokoládé",
+          "name": "Szilvás kenyérpuding vanília sodóval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-29": {
+    "2026-10-06": {
       "items": [
         {
-          "name": "Marha erőleves csigatésztával",
+          "name": "Kacsaleves kacsamáj gombóccal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Füstölt sajttal töltött malac karamellizált körtével és burgonyapürével",
+          "name": "Focaccia chilis tépett marhával és tejföllel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Somlói, rum, csokoládé",
+          "name": "Szilvás kenyérpuding vanília sodóval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-09-30": {
+    "2026-10-07": {
       "items": [
         {
-          "name": "Babgulyás",
+          "name": "Erdei gombaleves gesztenyehabbal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Jambalaya",
+          "name": "Aszalt paradicsommal töltött karaj brokkoli gratinnal és  mustáros-zöldborsmártással",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Somlói, rum, csokoládé",
+          "name": "Szilvás kenyérpuding vanília sodóval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-01": {
+    "2026-10-08": {
       "items": [
         {
-          "name": "Zöldség krémleves sütőtök gomóccal",
+          "name": "Gyömbéres-körteleves mandula pralinével",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Cheddar bundás csirke paradicsomos spagettivel",
+          "name": "Joghurt-citrommal pácolt csirkecombfilé batátapürével és narancsos lilakáposztával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Somlói, rum, csokoládé",
+          "name": "Szilvás kenyérpuding vanília sodóval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-02": {
+    "2026-10-09": {
       "items": [
         {
-          "name": "Feketeerdő meggyleves meggypálinka habbal",
+          "name": "Ribollita aszalt paradicsomos krutonnal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Paraszt vekni grillkolbásszal steakburgonyával és ajvárral",
+          "name": "Gyros pitában szalmakrumplival",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Somlói, rum, csokoládé",
+          "name": "Szilvás kenyérpuding vanília sodóval",
           "price": "1390 Ft",
           "category": "dessert"
         }
