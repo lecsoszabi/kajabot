@@ -1,96 +1,91 @@
 {
-  "weekMonday": "2026-10-12",
+  "weekMonday": "2026-10-19",
   "days": {
-    "2026-10-12": {
+    "2026-10-19": {
       "items": [
         {
-          "name": "Fahéjas szilvaleves",
+          "name": "Mediterrán fokhagymaleves kolbászmorzsával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Fokhagymás karaj csíkok szarvasgombás törtburgonyával és kolbászmorzsával",
+          "name": "Szezámmagos karaj batátakrémmel és hollandival",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tonkababos, mascarponés mákos guba",
+          "name": "Erdei gyümölcsös pite",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-13": {
+    "2026-10-20": {
       "items": [
         {
-          "name": "Tyúkhúsleves tésztával",
+          "name": "Káposztás marhagulyás",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Füstölt sajtos csirke sütőtök krémmel és mandulás burgonyafánkkal",
+          "name": "Bazsalikomos rizottó grillezett csirkével és vegyes salátával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tonkababos, mascarponés mákos guba",
+          "name": "Erdei gyümölcsös pite",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-14": {
+    "2026-10-21": {
       "items": [
         {
-          "name": "Mézes gyömbéres sütőtök krémleves burgonya gombóccal",
+          "name": "Húsleves rizstésztával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Piccata Milanese",
+          "name": "Szarvasgombás bakonyi karaj illatos rizzsel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tonkababos, mascarponés mákos guba",
+          "name": "Erdei gyümölcsös pite",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-15": {
+    "2026-10-22": {
       "items": [
         {
-          "name": "Chowder",
+          "name": "Erdei gyümölcsleves habcsók morzsával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Briós vekni tépett tejfölös marhaszeggyel és szalmaburgonyával",
+          "name": "Bazsalikomos gnocchi aszalt paradicsommal és mandula bundás crispersszel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tonkababos, mascarponés mákos guba",
+          "name": "Erdei gyümölcsös pite",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-16": {
+    "2026-10-23": {
       "items": [
         {
-          "name": "Korhelyleves",
-          "price": "990 Ft",
+          "name": "-ÜNNEPI MENÜSZÜNET-",
+          "price": null,
           "category": "soup"
         },
         {
-          "name": "Rakott csusza pörccel és tejföllel",
-          "price": "1990 Ft",
-          "category": "main"
-        },
-        {
-          "name": "Tonkababos, mascarponés mákos guba",
+          "name": "Erdei gyümölcsös pite",
           "price": "1390 Ft",
           "category": "dessert"
         }
