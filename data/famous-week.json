@@ -1,91 +1,96 @@
 {
-  "weekMonday": "2026-10-19",
+  "weekMonday": "2026-10-26",
   "days": {
-    "2026-10-19": {
+    "2026-10-26": {
       "items": [
         {
-          "name": "Mediterrán fokhagymaleves kolbászmorzsával",
+          "name": "Bableves galuskával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Szezámmagos karaj batátakrémmel és hollandival",
+          "name": "Tandori csirkemell kurkumás rizspiláffal",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Erdei gyümölcsös pite",
+          "name": "Vaníliás tejberizs erdei gyümölcsös raguval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-20": {
+    "2026-10-27": {
       "items": [
         {
-          "name": "Káposztás marhagulyás",
+          "name": "Zöldség krémleves cheddar morzsával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Bazsalikomos rizottó grillezett csirkével és vegyes salátával",
+          "name": "Érlelt tarja pecsenye rizlinges káposztával és steak burgonyával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Erdei gyümölcsös pite",
+          "name": "Vaníliás tejberizs erdei gyümölcsös raguval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-21": {
+    "2026-10-28": {
       "items": [
         {
-          "name": "Húsleves rizstésztával",
+          "name": "Májgombóc leves",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Szarvasgombás bakonyi karaj illatos rizzsel",
+          "name": "Pankóban sült fokhagymás malac uborkasalátával quinoával és kusz-kusszal",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Erdei gyümölcsös pite",
+          "name": "Vaníliás tejberizs erdei gyümölcsös raguval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-22": {
+    "2026-10-29": {
       "items": [
         {
-          "name": "Erdei gyümölcsleves habcsók morzsával",
+          "name": "Mustáros sertésragu leves tésztával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Bazsalikomos gnocchi aszalt paradicsommal és mandula bundás crispersszel",
+          "name": "Carbonara parmezánnal",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Erdei gyümölcsös pite",
+          "name": "Vaníliás tejberizs erdei gyümölcsös raguval",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-10-23": {
+    "2026-10-30": {
       "items": [
         {
-          "name": "-ÜNNEPI MENÜSZÜNET-",
-          "price": null,
+          "name": "Tonkababos mákleves mákos gubával",
+          "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Erdei gyümölcsös pite",
+          "name": "Pulled pork wrap szalmakrumplival",
+          "price": "1990 Ft",
+          "category": "main"
+        },
+        {
+          "name": "Vaníliás tejberizs erdei gyümölcsös raguval",
           "price": "1390 Ft",
           "category": "dessert"
         }
