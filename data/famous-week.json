@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-11-02",
+  "weekMonday": "2026-11-09",
   "days": {
-    "2026-11-02": {
+    "2026-11-09": {
       "items": [
         {
-          "name": "Fahéjas szilvaleves sós karamellás granolával",
+          "name": "Füstölt sajtos fokhagyma krémleves és sajtropogós forgács",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Malac diós bundában gesztenyés burgonyapürével",
+          "name": "Gombás rizottó csirkemell kockákkal és zsályával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tiramisu torta szelet",
+          "name": "Túrós rétes",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-03": {
+    "2026-11-10": {
       "items": [
         {
-          "name": "Aszalt paradicsomos leves bazsalikommal",
+          "name": "Kacsaleves májgombóccal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Toszkán lepény tejföllel és baconnel",
+          "name": "Aszaltparadicsommal töltött karaj kertész salátával és krokettel",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tiramisu torta szelet",
+          "name": "Túrós rétes",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-04": {
+    "2026-11-11": {
       "items": [
         {
-          "name": "Szarvasgombás malacragu leves",
+          "name": "Trüffel burgonya leves",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Aszalt szilvával töltött karaj lilakáposztával és steakburgonyával",
+          "name": "Cayen csirkedobverő fűszeres rizs és pikáns szósz",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tiramisu torta szelet",
+          "name": "Túrós rétes",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-05": {
+    "2026-11-12": {
       "items": [
         {
-          "name": "Batáta-sütőtök leves burgonya chipsszel",
+          "name": "Babgulyás",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Currys csirkeragu korianderes rizzsel",
+          "name": "Fokhagymás pecsenye paprikás tört burgonyával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tiramisu torta szelet",
+          "name": "Túrós rétes",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-06": {
+    "2026-11-13": {
       "items": [
         {
-          "name": "Vad consommé tésztával",
+          "name": "Barackos túró krémleves szezámpraliné morzsával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Gyros pitában hasábburgonyával",
+          "name": "Tandori csirke wrap szalmával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Tiramisu torta szelet",
+          "name": "Túrós rétes",
           "price": "1390 Ft",
           "category": "dessert"
         }
