@@ -7,6 +7,12 @@ on:
     # szerdán is (tartalékként), utána viszont leállunk a következő hétig
     - cron: '0 5-14 * * 1-3'
   workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - 'src/lib/famous*.js'
+      - 'scripts/scrape-famous.mjs'
+      - '.github/workflows/famous-scrape.yml'
 
 permissions:
   contents: write
