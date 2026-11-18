@@ -1,96 +1,96 @@
 {
-  "weekMonday": "2026-11-09",
+  "weekMonday": "2026-11-16",
   "days": {
-    "2026-11-09": {
+    "2026-11-16": {
       "items": [
         {
-          "name": "Füstölt sajtos fokhagyma krémleves és sajtropogós forgács",
+          "name": "Sült zöldség krémleves kolbászmorzsával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Gombás rizottó csirkemell kockákkal és zsályával",
+          "name": "Konyakos karaj steak, baconös kelbimbó és röszti",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Túrós rétes",
+          "name": "Somlói tortaszelet",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-10": {
+    "2026-11-17": {
       "items": [
         {
-          "name": "Kacsaleves májgombóccal",
+          "name": "Marha esszencia rizstésztával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Aszaltparadicsommal töltött karaj kertész salátával és krokettel",
+          "name": "Fokhagymás lángos lepény, mediterrán csirkemell, saláta válogatás",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Túrós rétes",
+          "name": "Somlói tortaszelet",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-11": {
+    "2026-11-18": {
       "items": [
         {
-          "name": "Trüffel burgonya leves",
+          "name": "Bazsalikomos paradicsomleves cukkinivel, padlizsánnal",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Cayen csirkedobverő fűszeres rizs és pikáns szósz",
+          "name": "Penne arrabiata szezám bundás csirkével és parmezánnal",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Túrós rétes",
+          "name": "Somlói tortaszelet",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-12": {
+    "2026-11-19": {
       "items": [
         {
-          "name": "Babgulyás",
+          "name": "Gulyásleves szarvasgombás sztrapacskával",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Fokhagymás pecsenye paprikás tört burgonyával",
+          "name": "Bakonyi karaj rizspiláffal",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Túrós rétes",
+          "name": "Somlói tortaszelet",
           "price": "1390 Ft",
           "category": "dessert"
         }
       ]
     },
-    "2026-11-13": {
+    "2026-11-20": {
       "items": [
         {
-          "name": "Barackos túró krémleves szezámpraliné morzsával",
+          "name": "Vaníliás körteleves",
           "price": "990 Ft",
           "category": "soup"
         },
         {
-          "name": "Tandori csirke wrap szalmával",
+          "name": "Nashville burger szalmával",
           "price": "1990 Ft",
           "category": "main"
         },
         {
-          "name": "Túrós rétes",
+          "name": "Somlói tortaszelet",
           "price": "1390 Ft",
           "category": "dessert"
         }
